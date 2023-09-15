@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter&family=Montserrat:wght@400;600;700&display=swap");
+
+body {
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0e6d2;
+  color: #543d35;
+}
+
+header {
+  background-color: #d4b996;
+  color: #543d35;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+audio {
+  width: 30%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invitation {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #8f6353;
+}
+
+.names {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+}
+
+.date,
+.location {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.2rem;
+}
+
+.rsvp {
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  font-size: 1.2rem;
+}
+/* Estilos base para tu botón */
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px; /* Ajusta el espaciado interior según tus preferencias */
+  background-color: #8f6353; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  font-size: 16px; /* Tamaño de fuente del botón */
+  border: none; /* Quita el borde del botón */
+  cursor: pointer;
+  border-radius: 5px; /* Agrega bordes redondeados al botón */
+}
+
+/* Estilo al pasar el cursor por encima del botón (hover) */
+.custom-button:hover {
+  background-color: #543d35; /* Cambia el color de fondo al pasar el cursor */
+  color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
+
+.link_pago {
+  width: 80%; /* Ancho deseado para la sección */
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+.info_link {
+  width: 65%; /* Ancho deseado para la sección */
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.img_pago {
+  width: 50%;
+  margin-left: 27%;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #8f6353;
+  font-style: italic;
+}
+
+/* Media query para tablets (pantallas de 768px a 1023px) */
+@media (max-width: 1023px) {
+  header {
+    padding: 10px; /* Ejemplo: ajusta el espacio en el encabezado */
+  }
+
+  h1 {
+    font-size: 2rem; /* Ejemplo: ajusta el tamaño de fuente del encabezado */
+  }
+
+  /* Ajusta otros estilos según tus necesidades */
+}
+
+/* Media query para dispositivos móviles (pantallas de hasta 767px) */
+@media (max-width: 767px) {
+  header {
+    padding: 5px; /* Ejemplo: ajusta el espacio en el encabezado aún más */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Ejemplo: ajusta el tamaño de fuente del encabezado para móviles */
+  }
+
+  .content {
+    padding: 10px; /* Ejemplo: ajusta el espacio en el contenido */
+  }
+
+  .invitation {
+    margin-bottom: 20px; /* Ejemplo: ajusta el espacio entre secciones */
+  }
+
+  /* Ajusta otros estilos según tus necesidades */
+}

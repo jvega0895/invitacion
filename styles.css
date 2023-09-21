@@ -6,6 +6,7 @@ body {
   padding: 0;
   background-color: #f0e6d2;
   color: #543d35;
+  text-align: center; /* Centra el contenido en el cuerpo */
 }
 
 header {
@@ -18,11 +19,40 @@ header {
 h1 {
   font-size: 2.5rem;
 }
+.foto_pareja {
+  display: block;
+  margin: 0 auto;
+}
+/* Estilos para el reproductor de música */
 audio {
-  width: 30%;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+  width: 50%; /* Ocupa todo el ancho disponible */
+  background-color: #f0e6d2; /* Color de fondo */
+  border: 2px solid #543d35; /* Borde con color */
+  border-radius: 10px; /* Borde redondeado */
+  padding: 10px; /* Espaciado interior */
+  margin-top: 10px;
+}
+
+/* Estilos para los controles de audio */
+audio::-webkit-media-controls-panel {
+  background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos para los botones de reproducción */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button {
+  color: #543d35; /* Color de los botones */
+}
+
+/* Estilos para la barra de progreso */
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: #543d35; /* Color del texto de tiempo */
+}
+
+/* Estilos para el volumen */
+audio::-webkit-media-controls-volume-slider {
+  background-color: #543d35; /* Color de fondo de la barra de volumen */
 }
 
 .content {
@@ -31,11 +61,16 @@ audio {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 .invitation {
   text-align: center;
   margin-bottom: 30px;
+}
+.mapa {
+  border-radius: 1rem;
+  box-shadow: 1px 5px 3px #333;
 }
 
 h2 {
@@ -93,7 +128,16 @@ h2 {
 }
 .img_pago {
   width: 50%;
-  margin-left: 27%;
+  text-align: center;
+}
+.info_pago {
+  text-align: center; /* Centrar el contenido horizontalmente */
+  max-width: 300px; /* Establece un ancho máximo para el div */
+  margin: 0 auto; /* Centrar el div horizontalmente en su contenedor */
+  background-color: #fff; /* Color de fondo */
+  padding: 20px; /* Espaciado interior */
+  border-radius: 10px; /* Borde redondeado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
 footer {
@@ -104,35 +148,25 @@ footer {
 }
 
 /* Media query para tablets (pantallas de 768px a 1023px) */
-@media (max-width: 1023px) {
-  header {
-    padding: 10px; /* Ejemplo: ajusta el espacio en el encabezado */
-  }
-
+@media screen and (max-width: 576px) {
+  /* Ajustes de estilo para pantallas pequeñas */
   h1 {
-    font-size: 2rem; /* Ejemplo: ajusta el tamaño de fuente del encabezado */
+    font-size: 2rem; /* Reducir el tamaño de la fuente del encabezado principal */
   }
-
-  /* Ajusta otros estilos según tus necesidades */
-}
-
-/* Media query para dispositivos móviles (pantallas de hasta 767px) */
-@media (max-width: 767px) {
-  header {
-    padding: 5px; /* Ejemplo: ajusta el espacio en el encabezado aún más */
+  .foto_pareja {
+    width: 100%;
   }
-
-  h1 {
-    font-size: 1.5rem; /* Ejemplo: ajusta el tamaño de fuente del encabezado para móviles */
-  }
-
   .content {
-    padding: 10px; /* Ejemplo: ajusta el espacio en el contenido */
+    width: 70%;
+    text-align: center;
   }
-
   .invitation {
-    margin-bottom: 20px; /* Ejemplo: ajusta el espacio entre secciones */
+    max-width: 100%;
+    margin: 0 auto;
   }
-
-  /* Ajusta otros estilos según tus necesidades */
+  .mapa {
+    width: 270px;
+    border-radius: 1rem;
+    box-shadow: 1px 5px 3px #333;
+  }
 }

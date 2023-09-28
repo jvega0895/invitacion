@@ -22,6 +22,8 @@ h1 {
 .foto_pareja {
   display: block;
   margin: 0 auto;
+  width: 300px;
+  box-shadow: 1px 5px 3px #333;
 }
 /* Estilos para el reproductor de música */
 audio {
